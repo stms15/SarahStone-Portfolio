@@ -36,11 +36,12 @@
                 <p>Hello and welcome to my portfolio website &#9786;</p>
                 <p>My name is Sarah and I'm currently studying to be a Full-Stack Web Developer in the UNB Coding Bootcamp program.</p>
                 <p>I have a bachelor's degree in Math and Physics, and I specialized in Python Programming. After graduation, I spent over a year as a Research Assitant at MUN where I collaborated on a Space Physics research project. Our paper is published in the Journal of Geophysical Research: Space Physics &mdash; a link to the article can be found in the <a href="#previous-work">Previous Work</a> section.</p>
-                <p>Through my current employment at Target Marketing & Communications, I was exposed to the world of web development. I started learning some basic HTML and CSS while working on creating emails and digital display ads, and I was instantly hooked. I'm logical, a problem-solver, and have always been hard-working and good at school, but I'm creative at heart. Web development is the perfect way to satisfy my creativity while focusing my career around my strengths and scientific background, and I'm excited to learn more!</p>
-                <p>If you'd like to discuss employment or collaboration opportunities, or if you just want to chat, please <a href="#contact">contact me</a>!</p>
+                <p>Through my current employment at Target Marketing & Communications, I was exposed to the world of web development. I started learning some basic HTML and CSS while working on creating emails and digital display ads, and I was instantly hooked. I'm logical, a problem&ndash;solver, and have always been hard&ndash;working and good at school, but I'm creative at heart. Web development is the perfect way to satisfy my creativity while focusing my career around my strengths and scientific background, and I'm excited to learn more!</p>
+                <p>If you'd like to discuss employment or collaboration opportunities, or you just want to chat, please <a href="#contact">contact me</a>!</p>
             </section>
 
             <!---- End Section: About Me ---->
+
 
             <!------ Start Section: Previous Work ------>
 
@@ -67,7 +68,7 @@
                     <div class="card"> 
                         <!-- Div for small box with details to go on top of image -->
                         <div> 
-                            <h4><a href="#"><i>Placeholder</a></h4>
+                            <h4><a href="#">Placeholder</a></h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros nibh, condimentum in mattis ut, maximus sit amet est. Proin elementum justo rutrum quam aliquam facilisis...</p>
                         </div>
                     </div>
@@ -76,26 +77,29 @@
 
             <!---- End Section: Previous Work ---->
 
+
             <!---- Start Section: Contact ---->
 
             <section id="contact">
-                <h2 id="contact">Contact</h2>
+                <h2>Contact</h2>
                 <div class="multi-column">
-                    <div>
+                    <!-- Socials -->
+                    <div id="socials">
                         <h4>Socials</h4>
                         <ul>
-                            <li><img src="" alt="GitHub icon"><a href="https://github.com/stms15" target="_blank">GitHub/stms15</a></li>
-                            <li><img src="" alt="LinkedIn icon"><a href="https://www.linkedin.com/in/sarahtmstone/" target="_blank">LinkedIn/sarahtmstone</a></li>
-                            <li><img src="" alt="envelope icon"><a href="" target="_blank"></a>stms15@mun.ca</li>
+                            <li><img src="./assets/images/GitHub-icon.svg" alt="GitHub icon"><a href="https://github.com/stms15" target="_blank">GitHub/stms15</a></li>
+                            <li><img src="./assets/images/LinkedIn-icon.png" alt="LinkedIn icon"><a href="https://www.linkedin.com/in/sarahtmstone/" target="_blank">LinkedIn/sarahtmstone</a></li>
+                            <li><img src="./assets/images/envelope.svg" alt="envelope icon"><a href="#">stms15@mun.ca</a></li>
                         </ul>
                     </div>
-                    <div>
+                    <!-- Email Form -->
+                    <div id="contact-form">
                         <h4>Message Me!</h4>
                         <form>
                             <ul>
-                                <li>Name: <input type="text"></li>
-                                <li>Email: <input type="text"></li>
-                                <li><input type="text"></li>
+                                <li>Name: <input type="text" placeholder="Your Name"></li>
+                                <li>Email: <input type="email" placeholder="youremail@example.com"></li>
+                                <li><input type="text" placeholder="Hi Sarah..."></li>
                             </ul>
                         </form>
                     </div>
@@ -104,8 +108,10 @@
             <!---- End Section: Contact ---->
         </main>
 
+        <!---- Start Footer ---->
         <footer>
             &copy; Sarah Stone
         </footer>
+        <!---- End Footer ---->
     </body>
 </html>
