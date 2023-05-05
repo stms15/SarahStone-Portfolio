@@ -40,7 +40,7 @@ header{
     /* align-items: center; */
     padding: 2%;
     background-color: var(--dark);
-    color: white;
+    color: var(--accent1);
     border-radius: 5px;
     /* width: 90%; */
     margin: auto;
@@ -67,7 +67,7 @@ nav ul{
 }
 
 nav a{
-    color: white;
+    color: var(--accent1);
     text-decoration: none;
 }
 
@@ -87,21 +87,6 @@ main section {
     flex-wrap: wrap;
 }
 
-#about{
-    background-color: var(--accent1);
-    padding: 2%; 
-}
-
-#work{
-    background-color: var(--accent2);
-    padding: 2%;
-}
-
-#contact{
-    background-color: var(--accent3);
-    padding: 2%;
-}
-
 .multi-column{
     display: flex;
     flex-direction: row;
@@ -116,26 +101,68 @@ main section {
     width: 30%;
 }
 
+/* About Section */
+
+#about{
+    background-color: var(--accent1);
+    padding: 2%; 
+}
+
+/* Work Section */
+
+#work{
+    background-color: var(--accent2);
+    padding: 2%;
+}
+
 #work a{
     color: #320216;
     text-decoration: none;
 }
 
+/* Contact Section */
+
+#contact{
+    background-color: var(--accent3);
+    padding: 2%;
+}
+
 #contact ul{
     list-style-type: none;
+    padding: 0;
 }
 
 #contact ul li{
     padding: 5px;
 }
 
+#contact ul li img{
+    max-width: 20px;
+    padding-right: 8px;
+}
+
 #contact a{
-    color: white;
+    color: var(--accent1);
     text-decoration: none;
+}
+
+#contact form input{
+    width: 65%;
+}
+
+#socials{
+    width: 45%;
+}
+
+#contact-form{
+    width: 45%;
 }
 
 /* ---- Footer classes ---- */
 
 footer {
     text-align: center;
+    background-color: var(--dark);
+    color: var(--accent1);
+    padding: 2%;
 }
