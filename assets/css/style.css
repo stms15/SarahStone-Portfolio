@@ -11,6 +11,7 @@
 }
 
 
+
 /* ---- Heading Attributes ---- */
 
 h1 {
@@ -29,8 +30,10 @@ h4 {
     font-size: 150%;
 }
 
+/* ---------------------------- */
 
-/* ----- Header classes ----- */
+
+/* ------- Header classes ------- */
 
 header{
     display: flex;
@@ -71,8 +74,15 @@ nav a{
     text-decoration: none;
 }
 
+/* Nav hover functions */
+nav a:hover{
+    color: var(--accent2);
+}
 
-/* ---- Main classes ---- */
+/* -------------------------- */
+
+
+/* ------ Main classes ----- */
 
 main {
     /* margin: 2%; */
@@ -96,9 +106,13 @@ main section {
 }
 
 .card{
-    border: 1px solid var(--grey);
+    border: 1px solid var(--dark);
     padding: 10px;
     width: 30%;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 10px var(--dark);
 }
 
 /* About Section */
@@ -106,6 +120,14 @@ main section {
 #about{
     background-color: var(--accent1);
     padding: 2%; 
+}
+
+#about a{
+    color: var(--accent2);
+}
+
+#about a:hover{
+    color: var(--dark);
 }
 
 /* Work Section */
@@ -158,6 +180,15 @@ main section {
     width: 45%;
 }
 
+/* Contact hover */
+
+#contact a:hover{
+    color: var(--dark);
+}
+
+/* -------------------------- */
+
+
 /* ---- Footer classes ---- */
 
 footer {
@@ -166,6 +197,8 @@ footer {
     color: var(--accent1);
     padding: 2%;
 }
+
+/* ------------------------- */
 
 
 /* ------------------------------------------------- */
