@@ -11,7 +11,7 @@
     <body>
         <header>
             <div class="headline-image-text">
-                <img src="./assets/images/Sarah-convocation-2022.jpg" alt="">
+                <img src="./assets/images/Sarah-convocation-2022.png" alt="a convocation photo of Sarah Stone with Quidi Vidi lake in the background">
                 <div>
                     <h1>Sarah Stone</h1>
                     <h3>Full-Stack Developer</h3>
@@ -34,10 +34,10 @@
             <section id="about">
                 <h2 id="about-me">About Me</h2>
                 <p>Hello and welcome to my portfolio website &#9786;</p>
-                <p>My name is Sarah and I'm currently studying to be a Full-Stack Web Developer in the UNB Coding Bootcamp program.</p>
-                <p>I have a bachelor's degree in Math and Physics, and I specialized in Python Programming. After graduation, I spent over a year as a Research Assitant at MUN where I collaborated on a Space Physics research project. Our paper is published in the Journal of Geophysical Research: Space Physics &mdash; a link to the article can be found in the <a href="#previous-work">Previous Work</a> section.</p>
-                <p>Through my current employment at Target Marketing & Communications, I was exposed to the world of web development. I started learning some basic HTML and CSS while working on creating emails and digital display ads, and I was instantly hooked. I'm logical, a problem&ndash;solver, and have always been hard&ndash;working and good at school, but I'm creative at heart. Web development is the perfect way to satisfy my creativity while focusing my career around my strengths and scientific background, and I'm excited to learn more!</p>
-                <p>If you'd like to discuss employment or collaboration opportunities, or you just want to chat, please <a href="#contact">contact me</a>!</p>
+                <p>My name is Sarah and I&rsquo;m currently studying to be a Full&ndash;Stack Web Developer in the UNB Coding Bootcamp program.</p>
+                <p>I have a bachelor&rsquo;s degree in Math and Physics, and I specialized in Python Programming. After graduation, I spent over a year as a Research Assitant at MUN where I collaborated on a Space Physics research project titled &ldquo;Analysis of Radiation Belt &lsquo;Killer&rsquo; Electron Energy Spectra&rdquo;. Our paper is published in the Journal of Geophysical Research: Space Physics and can be accessed <a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2022JA030698" target="_blank">here</a>.</p>
+                <p>Through my current employment at Target Marketing & Communications, I was exposed to the world of web development. I started learning some basic HTML and CSS while working on creating emails and digital display ads, and I was instantly hooked. I&rsquo;m logical, a problem&ndash;solver, and have always been hard&ndash;working and good at school, but I&rsquo;m creative at heart. Web development is the perfect way to satisfy my creativity while focusing my career around my strengths and scientific background, and I&rsquo;m excited to learn more!</p>
+                <p>If you&rsquo;d like to discuss employment or collaboration opportunities, or you just want to chat, please <a href="#contact">contact me</a>!</p>
             </section>
 
             <!---- End Section: About Me ---->
@@ -49,34 +49,37 @@
                 <h2 id="previous-work">Previous Work</h2>
                 <div class="multi-column"> 
                     <!-- Flex Box for entire project & background image -->
-                    <div class="card" style="background-image: url(./assets/images/CSS-Cheatsheet.png); background-size:100%;">
+                    <div class="card" id="first-app" onclick='window.open("https://stms15.github.io/CodingBootcamp-module02-mini-project/");' style="background-image: url(./assets/images/CSS-Cheatsheet.png); background-size:100%; cursor:pointer;">
+                        <!-- <a href="https://stms15.github.io/CodingBootcamp-module02-mini-project/" target="_blank"> -->
+                            <!-- <img src="./assets/images/CSS-Cheatsheet.png" alt="An image of the CSS Cheatsheet webpage with sections of helpful CSS snippets" width="100%" height="350px"> -->
                         <!-- Div for small box with details to go on top of image -->
                         <div id="card-info"> 
-                            <h4><a href="https://stms15.github.io/CodingBootcamp-module02-mini-project/" target="_blank">CSS Cheatsheet</a></h4>
+                            <h4>CSS Cheatsheet</h4>
                             <p>A webpage with useful CSS code snippets for quick reference.</p>
                         </div>
+                        </a>
                     </div>
                     <!-- Flex Box for entire project & background image -->
-                    <div class="card" style="background-image: url(./assets/images/Prework-Study-Guide.png); background-size:100%;">
+                    <div class="card" style="background-image: url(./assets/images/Prework-Study-Guide.png); background-size:100%; cursor:pointer" onclick='window.open("https://stms15.github.io/prework-study-guide/")'>
                         <!-- Div for small box with details to go on top of image -->
                         <div id="card-info"> 
-                            <h4><a href="https://stms15.github.io/prework-study-guide/" target="_blank">Prework Study Guide</a></h4>
+                            <h4>Prework Study Guide</h4>
                             <p>A webpage with some notes about HTML, CSS, Git, and JavaScript.</p>
                         </div>
                     </div>
                     <!-- Flex Box for entire project & background image -->
-                    <div class="card"> 
+                    <!-- <div class="card" onclick='window.open("https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2022JA030698")' style="cursor: pointer"> 
                         <!-- Div for small box with details to go on top of image -->
-                        <div id="card-info"> 
-                            <h4><a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2022JA030698" target="_blank"><i>Analysis of Radiation Belt &ldquo;Killer&rdquo; Electron Energy Spectra</i></a></h4>
+                        <!-- <div id="card-info"> 
+                            <h4><i>Analysis of Radiation Belt &ldquo;Killer&rdquo; Electron Energy Spectra</i></h4>
                             <p>&ldquo;Highly energetic (&gt;1 MeV) electrons are typically generated in the Earth&rsquo;s outer radiation belt during geomagnetically disturbed times. Such &ldquo;killer&rdquo; electrons can be produced by electron cyclotron resonance with whistler&ndash;mode waves...&rdquo;</p>
-                        </div>
-                    </div>
+                        </div> -->
+                    <!-- </div> -->
                     <!-- Flex Box for entire project & background image -->
-                    <div class="card"> 
+                    <div class="card" onclick='location.href="#"' style="cursor: pointer; background-image:url(./assets/images/placeholder.jpg); background-size:100%;"> 
                         <!-- Div for small box with details to go on top of image -->
                         <div id="card-info"> 
-                            <h4><a href="#">Placeholder</a></h4>
+                            <h4>Placeholder</h4>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros nibh, condimentum in mattis ut, maximus sit amet est. Proin elementum justo rutrum quam aliquam facilisis...</p>
                         </div>
                     </div>
