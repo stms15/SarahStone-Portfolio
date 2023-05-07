@@ -3,11 +3,17 @@
     --accent2: #A26769;
     --accent3: #732C2C;
     --dark: #320216;
-    --grey: #515657;
+    --grey: #2E3031;
 }
 
 * {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    color: var(--grey);
+    background-color: var(--dark);
+    padding: 10px;
 }
 
 
@@ -44,10 +50,12 @@ header{
     /* align-items: center; */
     /* padding: 2%; */
     background-color: var(--dark);
-    color: var(--accent1);
-    /* border-radius: 5px; */
+    color: var(--accent2);
     width: 100%;
-    /* margin: auto; */
+}
+
+header h1{
+    color: var(--accent1);
 }
 
 .headline-image-text{
@@ -103,15 +111,18 @@ main section {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .card{
+    position: relative;
     border: 1px solid var(--dark);
     border-radius: 5px;
     padding: 10px;
+    margin-bottom: 10px;
     width: 30%;
-    min-height: 350px;
+    /* height: 350px; */
+    height: 50vh;
     display: flex;
     align-items: flex-end;
     background-image: linear-gradient(rgba(50, 2, 22, 0.4) 0%, rgba(50, 2, 22, 0.7) 100%, rgba(115, 44, 44, 1));
@@ -123,11 +134,17 @@ main section {
 
 #card-info{
     width: 75%;
-    /* max-height: 125px; */
     background-color: var(--accent1);
     padding: 10px;
     border-radius: 5px;
-    position: relative;
+    left: 5px;
+    bottom: 5px;
+    z-index: 2;
+}
+
+#first-app{
+    width: 96.5%;
+    height: 80vh;
 }
 
 /* About Section */
@@ -135,6 +152,10 @@ main section {
 #about{
     background-color: var(--accent1);
     padding: 2%; 
+}
+
+#about h2{
+    color: var(--accent3);
 }
 
 #about a{
@@ -152,6 +173,10 @@ main section {
     padding: 2%;
 }
 
+#work h2{
+    color: var(--dark);
+}
+
 #work a{
     color: #320216;
     text-decoration: none;
@@ -162,6 +187,7 @@ main section {
 #contact{
     background-color: var(--accent3);
     padding: 2%;
+    color: var(--accent1);
 }
 
 #contact ul{
@@ -220,14 +246,21 @@ footer {
 
 @media screen and (max-width: 992px){
     .card{
-        width: 46%;
-        margin-bottom: 10px;
+        width: 45%;
+    }
+
+    #first-app{
+        width: 95%;
     }
 }
 
 @media screen and (max-width: 768px){
     .card{
-        width: 95%;
-        margin-bottom: 10px;
+        width: 94%;
+    }
+
+    #first-app{
+        width: 94%;
+        height: 70vh;
     }
 }
