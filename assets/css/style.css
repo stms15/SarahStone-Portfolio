@@ -28,6 +28,7 @@ h3 {
 
 h4 {
     font-size: 150%;
+    margin: 5px;
 }
 
 /* ---------------------------- */
@@ -107,12 +108,26 @@ main section {
 
 .card{
     border: 1px solid var(--dark);
+    border-radius: 5px;
     padding: 10px;
     width: 30%;
+    min-height: 350px;
+    display: flex;
+    align-items: flex-end;
+    background-image: linear-gradient(rgba(50, 2, 22, 0.4) 0%, rgba(50, 2, 22, 0.7) 100%, rgba(115, 44, 44, 1));
 }
 
 .card:hover{
     box-shadow: 5px 5px 10px var(--dark);
+}
+
+#card-info{
+    width: 75%;
+    /* max-height: 125px; */
+    background-color: var(--accent1);
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
 }
 
 /* About Section */
