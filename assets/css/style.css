@@ -7,7 +7,7 @@
 }
 
 * {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body{
@@ -29,7 +29,7 @@ h2 {
 }
 
 h3 {
-    font-size: 200%;
+    font-size: 185%;
 }
 
 h4 {
@@ -47,7 +47,7 @@ header{
     flex-wrap: wrap;
     flex-direction: column;
     /* justify-content: space-evenly; */
-    /* align-items: center; */
+    align-items: center;
     /* padding: 2%; */
     background-color: var(--dark);
     color: var(--accent2);
@@ -63,10 +63,11 @@ header h1{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    width: 85%;
 }
 
 header img{
-    max-height: 200px;
+    height: 250px;
     padding: 20px;
 }
 
@@ -77,44 +78,64 @@ nav ul{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    align-items: center;
     list-style-type: none;
     padding: 0;
+    background-image: linear-gradient(to right, rgba(239, 214, 206, 1) 0%, rgba(162, 103, 105) 50%, rgba(115, 44, 44, 0.6) 100%);
+    border-radius: 5px;
 }
 
 nav li{
     padding: 10px;
     padding-left: 30px;
     padding-right: 30px;
-    margin-top: 5px;
-    border-radius: 5px;
-    margin-right: 5px;
+    /* margin-top: 5px; */
+    /* border-radius: 5px;
+    margin-right: 5px; */
 }
 
-#nav-about{
-    background-color: var(--accent1);
-}
+/* #nav-about,
+#nav-work,
+#nav-contact{
+    background-color: var(--accent3);
+} */
 
-#nav-about a{
-    color: var(--accent3);
+/* #nav-about a,
+#nav-work a,
+#nav-contact a{
+    color: white;
     text-decoration: none;
-}
+} */
+
+/* #nav-about{
+    background-color: var(--accent1);
+} 
 
 #nav-work{
     background-color: var(--accent2);
 }
 
-#nav-work a{
-    color: var(--accent1);
-    text-decoration: none;
-}
-
 #nav-contact{
     background-color: var(--accent3);
+}
+*/
+
+#nav-about a{
+    color: var(--accent3);
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+#nav-work a{
+    color: var(--dark);
+    text-decoration: none;
+    transition: 0.5s;
 }
 
 #nav-contact a{
     color: var(--accent1);
     text-decoration: none;
+    transition: 0.5s;
 }
 
 /* Nav hover functions */
@@ -122,8 +143,32 @@ nav li{
 #nav-about a:hover,
 #nav-work a:hover,
 #nav-contact a:hover{
-    color: var(--dark);
+    font-size: 120%;
+    /* font-weight: 500; */
+    /* transition: all 400ms; */
 }
+
+#nav-about a:focus,
+#nav-work a:focus,
+#nav-contact a:focus{
+    font-size: 115%;
+}
+
+/* #nav-about a:hover::after,
+#nav-work a:hover::after,
+#nav-contact a:hover::after{
+    transition: all 400ms;
+} */
+
+/* #nav-about a:hover{
+    color: black;
+}
+#nav-work a:hover{
+    color: white;
+}
+#nav-contact a:hover{
+    color: var(--dark);
+} */
 
 /* -------------------------- */
 
@@ -213,11 +258,11 @@ main section {
 }
 
 #about a{
-    color: var(--accent2);
+    color: var(--dark);
 }
 
 #about a:hover{
-    color: var(--dark);
+    color: white;
 }
 
 /* Work Section */
