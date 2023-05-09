@@ -17,7 +17,6 @@ body{
 }
 
 
-
 /* ---- Heading Attributes ---- */
 
 h1 {
@@ -46,7 +45,6 @@ header{
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    /* justify-content: space-evenly; */
     align-items: center;
     background-color: var(--grey);
     color: var(--accent2);
@@ -90,36 +88,7 @@ nav li{
     padding: 10px;
     padding-left: 30px;
     padding-right: 30px;
-    /* margin-top: 5px; */
-    /* border-radius: 5px;
-    margin-right: 5px; */
 }
-
-/* #nav-about,
-#nav-work,
-#nav-contact{
-    background-color: var(--accent3);
-} */
-
-/* #nav-about a,
-#nav-work a,
-#nav-contact a{
-    color: white;
-    text-decoration: none;
-} */
-
-/* #nav-about{
-    background-color: var(--accent1);
-} 
-
-#nav-work{
-    background-color: var(--accent2);
-}
-
-#nav-contact{
-    background-color: var(--accent3);
-}
-*/
 
 #nav-about a{
     color: var(--accent3);
@@ -145,31 +114,13 @@ nav li{
 #nav-work a:hover,
 #nav-contact a:hover{
     font-size: 120%;
-    /* font-weight: 500; */
-    /* transition: all 400ms; */
 }
 
 #nav-about a:focus,
 #nav-work a:focus,
 #nav-contact a:focus{
-    font-size: 115%;
+    font-size: 120%;
 }
-
-/* #nav-about a:hover::after,
-#nav-work a:hover::after,
-#nav-contact a:hover::after{
-    transition: all 400ms;
-} */
-
-/* #nav-about a:hover{
-    color: black;
-}
-#nav-work a:hover{
-    color: white;
-}
-#nav-contact a:hover{
-    color: var(--dark);
-} */
 
 /* -------------------------- */
 
@@ -177,7 +128,6 @@ nav li{
 /* ------ Main classes ----- */
 
 main {
-    /* margin: 2%; */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -205,12 +155,13 @@ main section {
     border: 1px solid var(--dark);
     border-radius: 5px;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+    margin-top: 10px;
     width: 30%;
     min-height: 28vw;
     display: flex;
     align-items: flex-end;
-    background-color: var(--dark);
+    background-color: var(--grey);
     overflow: hidden;
 }
 
@@ -219,7 +170,7 @@ main section {
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0.85;
+    opacity: 0.75;
 }
 
 .card:hover{
@@ -253,7 +204,6 @@ main section {
 /* About Section */
 
 #about{
-    /* background-color: var(--accent1); */
     background-image: linear-gradient(rgba(239, 214, 206, 1) 0%, rgba(162, 103, 105, 1) 100%);
     padding: 2%; 
 }
@@ -270,10 +220,13 @@ main section {
     color: white;
 }
 
+#about a:focus{
+    color: white;
+}
+
 /* Work Section */
 
 #work{
-    /* background-color: var(--accent2); */
     background-image: linear-gradient(rgba(162, 103, 105, 1) 0%, rgba(115, 44, 44, 1) 100%);
     padding: 2%;
 }
@@ -286,15 +239,9 @@ main section {
     color: var(--accent3);
 }
 
-#work a{
-    color: #320216;
-    text-decoration: none;
-}
-
 /* Contact Section */
 
 #contact{
-    /* background-color: var(--accent3); */
     background-image: linear-gradient(rgba(115, 44, 44, 1) 0%, rgba(50, 2, 22, 1) 100%);
     padding: 2%;
     color: var(--accent1);
@@ -321,8 +268,10 @@ main section {
 }
 
 #socials{
-    width: 40%;
+    width: 42%;
 }
+
+/* Contact form classes */
 
 #contact-form{
     width: 42%;
@@ -343,9 +292,6 @@ form #submit{
     position: relative;
     left: 62%;
 }
-
-
-/* Contact hover */
 
 #contact a:hover{
     color: var(--accent2);
@@ -369,13 +315,7 @@ footer {
 
 
 
-/* ------------------------------------------------- */
-
-/* @media screen and (max-width: 1500px){
-    .card{
-        height: 40vh;
-    }
-} */
+/* --------------- Dynamic ---------------- */
 
 @media screen and (max-width: 992px){
     .card{
