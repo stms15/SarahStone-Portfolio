@@ -12,7 +12,7 @@
 
 body{
     color: var(--grey);
-    background-color: var(--dark);
+    background-color: var(--grey);
     padding: 10px;
 }
 
@@ -48,9 +48,11 @@ header{
     flex-direction: column;
     /* justify-content: space-evenly; */
     align-items: center;
-    background-color: var(--dark);
+    background-color: var(--grey);
     color: var(--accent2);
     width: 100%;
+    margin-bottom: 10px;
+    border-radius: 20px;
 }
 
 header h1{
@@ -80,7 +82,7 @@ nav ul{
     align-items: center;
     list-style-type: none;
     padding: 0;
-    background-image: linear-gradient(to right, rgba(239, 214, 206, 1) 0%, rgba(162, 103, 105) 50%, rgba(115, 44, 44, 0.6) 100%);
+    background-image: linear-gradient(to right, rgba(239, 214, 206, 1) 0%, rgba(162, 103, 105) 35%, rgba(115, 44, 44, 1) 70%, rgba(50, 2, 22, 1) 100%);
     border-radius: 5px;
 }
 
@@ -185,7 +187,8 @@ main section {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border-radius: 20px;
 }
 
@@ -203,10 +206,8 @@ main section {
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 10px;
-    /* margin: 10px; */
     width: 30%;
-    max-height: 28vw;
-    height: 50vh;
+    min-height: 28vw;
     display: flex;
     align-items: flex-end;
     background-color: var(--dark);
@@ -232,7 +233,7 @@ main section {
 #first-app{
     width: 96.5%;
     height: 85vh;
-    max-height: 50vw;
+    min-height: 50vw;
 }
 
 #card-info{
@@ -294,7 +295,7 @@ main section {
 
 #contact{
     /* background-color: var(--accent3); */
-    background-image: linear-gradient(rgba(115, 44, 44, 1) 0%, rgba(115, 44, 44, 0.5) 100%);
+    background-image: linear-gradient(rgba(115, 44, 44, 1) 0%, rgba(50, 2, 22, 1) 100%);
     padding: 2%;
     color: var(--accent1);
 }
@@ -305,7 +306,8 @@ main section {
 }
 
 #contact ul li{
-    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 #contact ul li img{
@@ -318,22 +320,35 @@ main section {
     text-decoration: none;
 }
 
+#socials{
+    width: 40%;
+}
+
+#contact-form{
+    width: 42%;
+    position: relative;
+}
+
 #contact form input{
     width: 65%;
 }
 
-#socials{
-    width: 45%;
+form #description{
+    position: relative;
+    left: 52px;
 }
 
-#contact-form{
-    width: 45%;
+form #submit{
+    width: 100px;
+    position: relative;
+    left: 62%;
 }
+
 
 /* Contact hover */
 
 #contact a:hover{
-    color: var(--dark);
+    color: var(--accent2);
 }
 
 /* -------------------------- */
@@ -343,9 +358,11 @@ main section {
 
 footer {
     text-align: center;
-    background-color: var(--dark);
+    background-color: var(--grey);
     color: var(--accent1);
     padding: 2%;
+    border-radius: 20px;
+    margin-top: 10px;
 }
 
 /* ------------------------- */
@@ -363,31 +380,28 @@ footer {
 @media screen and (max-width: 992px){
     .card{
         width: 45%;
-        max-height: 40vw;
-        /* height: 36vh; */
+        min-height: 40vw;
     }
 
     #first-app{
         width: 95%;
-        height: 75vh;
-        max-height: 70vw;
+        min-height: 70vw;
     }
 }
 
 @media screen and (max-width: 768px){
     .card{
         width: 94%;
-        max-height: 70vw;
-        /* height: 40vh; */
+        min-height: 70vw;
     }
 
     #first-app{
         width: 94%;
-        height: 60vh;
-        max-height: 89vw;
+        min-height: 89vw;
     }
 
     #first-app #card-info{
         width: 75%;
     }
+
 }
