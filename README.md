@@ -41,6 +41,8 @@ In the "Contact" section under "Socials," the GitHuib icon was obtained <a href=
 
 W3 Schools was used to understand the proper use of <a href="https://www.w3schools.com/css/css_overflow.asp" taregt="_blank">overflow<a>, <a href="https://www.w3schools.com/css/css_image_transparency.asp" target="_blank">opacity</a>, <a href="https://www.w3schools.com/css/css3_transitions.asp" target="_blank">transitions</a>, and how to add a button and alter the style of <a href="https://www.w3schools.com/css/css_form.asp" target="_blank">forms</a>.
 
+Additionally, <a href="https://stackoverflow.com/questions/37323619/second-media-query-not-working">this Stack Overflow thread</a> helped determine the solution required for the second media query to work on mobile devices. Specifying the wdith and size content of the meta "viewport" field fixed this issue.
+
 ## License
 
 &copy; 2023 Sarah Stone
