@@ -183,7 +183,6 @@ main section {
 
 #first-app{
     width: 96.5%;
-    height: 85vh;
     min-height: 50vw;
 }
 
@@ -330,6 +329,10 @@ footer {
 }
 
 @media screen and (max-width: 768px){
+    nav li{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     .card{
         width: 94%;
         min-height: 70vw;
@@ -337,11 +340,10 @@ footer {
 
     #first-app{
         width: 94%;
-        min-height: 89vw;
+        min-height: 90vw;
     }
 
     #first-app #card-info{
         width: 75%;
     }
-
 }
