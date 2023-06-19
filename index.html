@@ -1,134 +1,243 @@
 <!DOCTYPE html>
 
 <html lang="en-US">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="title" content="Sarah Stone - Portfolio"/>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
-        <title>Sarah Stone - Portfolio</title>
-        <link rel="stylesheet" href="./assets/css/style.css">
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="title" content="Sarah Stone - Portfolio" />
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <title>Sarah Stone - Portfolio</title>
+    <!-- Add Bootstrap -->
+    <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    /> -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
 
-    <body>
-        <header>
-            <div class="headline-columns">
-                <img src="./assets/images/Sarah-convocation-2022.png" alt="a convocation photo of Sarah Stone with Quidi Vidi lake in the background">
-                <div>
-                    <h1>Sarah Stone</h1>
-                    <h3>Full-Stack Developer</h3>
-                    <p>Based in Newfoundland & Labrador</p>
+  <body>
+    <header>
+      <div class="headline-columns">
+        <img
+          src="./assets/images/Sarah-convocation-2022.png"
+          alt="a convocation photo of Sarah Stone with Quidi Vidi lake in the background"
+        />
+        <div>
+          <h1>Sarah Stone</h1>
+          <h3>Full-Stack Developer</h3>
+          <p>Based in Newfoundland & Labrador</p>
 
-                    <nav>
-                        <ul>
-                            <li id="nav-about"><a href="#about">About Me</a></li>
-                            <li id="nav-work"><a href="#work">Previous Work</a></li>
-                            <li id="nav-contact"><a href="#contact">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
+          <nav>
+            <ul>
+              <li id="nav-about"><a href="#about">About Me</a></li>
+              <li id="nav-work"><a href="#work">Previous Work</a></li>
+              <li id="nav-contact"><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!---- Start Section: About Me ---->
+      <section id="about">
+        <h2 id="about-me">About Me</h2>
+        <p>Hello and welcome to my portfolio website &#9786;</p>
+        <p>
+          My name is Sarah and I&rsquo;m currently studying to be a
+          Full&ndash;Stack Web Developer in the UNB Coding Bootcamp program.
+        </p>
+        <p>
+          I have a bachelor&rsquo;s degree in Math and Physics, and I
+          specialized in Python Programming. After graduation, I spent over a
+          year as a Research Assitant at MUN where I collaborated on a Space
+          Physics research project titled &ldquo;Analysis of Radiation Belt
+          &lsquo;Killer&rsquo; Electron Energy Spectra.&rdquo; Our paper is
+          published in the Journal of Geophysical Research: Space Physics and
+          can be accessed
+          <a
+            href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2022JA030698"
+            target="_blank"
+            >here</a
+          >.
+        </p>
+        <p>
+          Through my current employment at Target Marketing & Communications, I
+          was exposed to the world of web development. I started learning some
+          basic HTML and CSS while working on creating emails and digital
+          display ads, and I was instantly hooked. I&rsquo;m logical, a
+          problem&ndash;solver, and have always been hard&ndash;working and
+          studious, but I&rsquo;m creative at heart. Web development is the
+          perfect way to satisfy my creativity while focusing my career around
+          my strengths and scientific background, and I&rsquo;m excited to learn
+          more!
+        </p>
+        <p>
+          If you&rsquo;d like to discuss employment or collaboration
+          opportunities, or you just want to chat, please
+          <a href="#contact">contact me</a>!
+        </p>
+      </section>
+
+      <!---- End Section: About Me ---->
+
+      <!------ Start Section: Previous Work ------>
+
+      <section id="work">
+        <h2 id="previous-work">Previous Work</h2>
+        <div class="multi-column">
+          <div class="card" id="first-app">
+            <a href="https://stms15.github.io/PokePlaylist-app" target="_blank">
+              <img
+                src="./assets/images/PokePlaylist.png"
+                alt="screen grab of the PokePlaylist website"
+              />
+            </a>
+            <div id="card-info">
+              <h4>Pok&eacute;Playlist</h4>
+              <p style="color: var(--grey)">
+                Create a playlist based on your ideal Pok&eacute;mon team!
+              </p>
             </div>
-        </header>
+          </div>
 
-        <main>
-            <!---- Start Section: About Me ---->
-            <section id="about">
-                <h2 id="about-me">About Me</h2>
-                <p>Hello and welcome to my portfolio website &#9786;</p>
-                <p>My name is Sarah and I&rsquo;m currently studying to be a Full&ndash;Stack Web Developer in the UNB Coding Bootcamp program.</p>
-                <p>I have a bachelor&rsquo;s degree in Math and Physics, and I specialized in Python Programming. After graduation, I spent over a year as a Research Assitant at MUN where I collaborated on a Space Physics research project titled &ldquo;Analysis of Radiation Belt &lsquo;Killer&rsquo; Electron Energy Spectra.&rdquo; Our paper is published in the Journal of Geophysical Research: Space Physics and can be accessed <a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2022JA030698" target="_blank">here</a>.</p>
-                <p>Through my current employment at Target Marketing & Communications, I was exposed to the world of web development. I started learning some basic HTML and CSS while working on creating emails and digital display ads, and I was instantly hooked. I&rsquo;m logical, a problem&ndash;solver, and have always been hard&ndash;working and studious, but I&rsquo;m creative at heart. Web development is the perfect way to satisfy my creativity while focusing my career around my strengths and scientific background, and I&rsquo;m excited to learn more!</p>
-                <p>If you&rsquo;d like to discuss employment or collaboration opportunities, or you just want to chat, please <a href="#contact">contact me</a>!</p>
-            </section>
+          <div class="card">
+            <a
+              href="https://stms15.github.io/weather-forecast-dashboard/"
+              target="_blank"
+            >
+              <img
+                src="./assets/images/WeatherForecastDashboard.png"
+                alt="screen grab of the Weather Forecast website with the weather for St. John's, Newfoundland"
+              />
+            </a>
+            <div id="card-info">
+              <h4>5&ndash;Day Weather Forecast</h4>
+              <p style="color: var(--grey)">
+                Search for a city anywhere in the world to see the 5&ndash;day
+                weather forecast.
+              </p>
+            </div>
+          </div>
 
-            <!---- End Section: About Me ---->
+          <div class="card">
+            <a
+              href="https://stms15.github.io/JavaScript-quiz/index.html"
+              target="_blank"
+            >
+              <img
+                src="./assets/images/JavaScriptQuiz.png"
+                alt="screen grab of the JavaScript Coding Quiz"
+              />
+            </a>
+            <div id="card-info">
+              <h4>JavaScript Quiz</h4>
+              <p style="color: var(--grey)">
+                Take a quiz all about JavaScript and challenge the leaderboard.
+              </p>
+            </div>
+          </div>
 
+          <div class="card">
+            <a
+              href="https://stms15.github.io/CodingBootcamp-module02-mini-project/"
+              target="_blank"
+            >
+              <img
+                src="./assets/images/CSS-Cheatsheet.png"
+                alt="screen grab of the CSS Cheatsheet website with useful pieces of CSS code"
+              />
+            </a>
+            <div id="card-info">
+              <h4>CSS Cheatsheet</h4>
+              <p style="color: var(--grey)">
+                A webpage with useful CSS code snippets for quick reference.
+              </p>
+            </div>
+          </div>
 
-            <!------ Start Section: Previous Work ------>
+          <div class="card">
+            <a
+              href="https://stms15.github.io/prework-study-guide/"
+              target="_blank"
+            >
+              <img
+                src="./assets/images/Prework-Study-Guide.png"
+                alt="screen shot of the Prework Study Guide webpage with helpful tips about HTML, CSS, Git, and JavaScript"
+              />
+            </a>
 
-            <section id="work">
-                <h2 id="previous-work">Previous Work</h2>
-                <div class="multi-column"> 
-                    <div class="card" id="first-app">
-                        <a href="https://stms15.github.io/CodingBootcamp-module02-mini-project/" target="_blank">
-                            <img src="./assets/images/CSS-Cheatsheet.png" alt="screen grab of the CSS Cheatsheet website with useful pieces of CSS code">
-                        </a>
-                        <div id="card-info"> 
-                            <h4>CSS Cheatsheet</h4>
-                            <p style="color:var(--grey);">A webpage with useful CSS code snippets for quick reference.</p>
-                        </div>
-                    </div>
+            <div id="card-info">
+              <h4>Prework Study Guide</h4>
+              <p style="color: var(--grey)">
+                A webpage with some notes about HTML, CSS, Git, and JavaScript.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-                    <div class="card">
-                        <a href="https://stms15.github.io/prework-study-guide/" target="_blank">
-                            <img src="./assets/images/Prework-Study-Guide.png" alt="screen shot of the Prework Study Guide webpage with helpful tips about HTML, CSS, Git, and JavaScript"> 
-                        </a>
+      <!---- End Section: Previous Work ---->
 
-                        <div id="card-info"> 
-                            <h4>Prework Study Guide</h4>
-                            <p style="color:var(--grey);">A webpage with some notes about HTML, CSS, Git, and JavaScript.</p>
-                        </div>
-                    </div>
+      <!---- Start Section: Contact ---->
 
-                    <div class="card"> 
-                        <a href="#">
-                            <img src="./assets/images/placeholder.jpg" alt="placeholder image with a grey background and a white image icon">
-                        </a>
+      <section id="contact">
+        <h2>Contact</h2>
+        <div class="multi-column">
+          <div id="socials">
+            <h4>Socials</h4>
+            <ul>
+              <li>
+                <img
+                  src="./assets/images/GitHub-icon.svg"
+                  alt="GitHub icon"
+                /><a href="https://github.com/stms15" target="_blank"
+                  >GitHub/stms15</a
+                >
+              </li>
+              <li>
+                <img
+                  src="./assets/images/LinkedIn-icon.png"
+                  alt="LinkedIn icon"
+                /><a
+                  href="https://www.linkedin.com/in/sarahtmstone/"
+                  target="_blank"
+                  >LinkedIn/sarahtmstone</a
+                >
+              </li>
+              <li>
+                <img src="./assets/images/envelope.svg" alt="envelope icon" /><a
+                  href="#"
+                  >stms15@mun.ca</a
+                >
+              </li>
+            </ul>
+          </div>
 
-                        <div id="card-info"> 
-                            <h4>Placeholder</h4>
-                            <p style="color:var(--grey);">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros nibh, condimentum in mattis ut, maximus sit amet est. Proin elementum justo rutrum quam aliquam facilisis...</p>
-                        </div>
-                    </div>
+          <div id="contact-form">
+            <h4>Message Me!</h4>
+            <form>
+              <ul>
+                <li>Name: <input type="text" placeholder="Your Name" /></li>
+                <li>
+                  Email:
+                  <input type="email" placeholder="youremail@example.com" />
+                </li>
+                <li id="description">
+                  <input type="text" placeholder="Hi Sarah..." />
+                </li>
+                <li id="submit"><input type="submit" /></li>
+              </ul>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!---- End Section: Contact ---->
+    </main>
 
-                    <div class="card"> 
-                        <a href="#">
-                            <img src="./assets/images/placeholder.jpg" alt="placeholder image with a grey background and a white image icon">
-                        </a>
-                        <div id="card-info"> 
-                            <h4>Placeholder</h4>
-                            <p style="color:var(--grey);">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros nibh, condimentum in mattis ut, maximus sit amet est. Proin elementum justo rutrum quam aliquam facilisis...</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!---- End Section: Previous Work ---->
-
-
-            <!---- Start Section: Contact ---->
-
-            <section id="contact">
-                <h2>Contact</h2>
-                <div class="multi-column">
-                    <div id="socials">
-                        <h4>Socials</h4>
-                        <ul>
-                            <li><img src="./assets/images/GitHub-icon.svg" alt="GitHub icon"><a href="https://github.com/stms15" target="_blank">GitHub/stms15</a></li>
-                            <li><img src="./assets/images/LinkedIn-icon.png" alt="LinkedIn icon"><a href="https://www.linkedin.com/in/sarahtmstone/" target="_blank">LinkedIn/sarahtmstone</a></li>
-                            <li><img src="./assets/images/envelope.svg" alt="envelope icon"><a href="#">stms15@mun.ca</a></li>
-                        </ul>
-                    </div>
-
-                    <div id="contact-form">
-                        <h4>Message Me!</h4>
-                        <form>
-                            <ul>
-                                <li>Name: <input type="text" placeholder="Your Name"></li>
-                                <li>Email: <input type="email" placeholder="youremail@example.com"></li>
-                                <li id="description"><input type="text" placeholder="Hi Sarah..."></li>
-                                <li id="submit"><input type="submit"></li>
-                            </ul>
-                        </form>
-                    </div>
-                </div>
-            </section>
-            <!---- End Section: Contact ---->
-        </main>
-
-        <!---- Start Footer ---->
-        <footer>
-            &copy; 2023 Sarah Stone
-        </footer>
-        <!---- End Footer ---->
-    </body>
+    <!---- Start Footer ---->
+    <footer>&copy; 2023 Sarah Stone</footer>
+    <!---- End Footer ---->
+  </body>
 </html>
